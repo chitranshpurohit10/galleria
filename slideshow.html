@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Galleria slideshow site</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <a href="index.html"><img src="assets/logo.svg" alt="Galleria"></a>
+            <div id="startstop">
+                <!--Start Slideshow-->
+            </div>
+        </header>
+        <main class="slideshow">
+
+            <div class="largeimage">
+                <div class="name">
+                    <div class="nameimage">Starry Night</div>
+                    <div class="nameauthor">Vincent Van Gogh</div>
+                </div>
+                <div id="authorphoto"></div>
+                <div class="view" onclick="imagemod()"><img src="assets/icon-view-image.svg" alt="View"> VIEW IMAGE</div>
+
+
+            </div>
+            <div class="textcol">
+                <div id="year"></div>
+                <div class="text">Although The Starry Night was painted during the day in Van Gogh's ground-floor studio, it would be inaccurate to state that the picture was painted from memory.</div>
+                <div class="source">GO TO SOURCE</div>
+            </div>
+        </main>
+    </div>
+    <hr id="progress">
+    <div class="footer">
+        <div class="namefooter">
+            <div class="nameimage">Starry Night</div>
+            <div class="nameauthor">Vincent Van Gogh</div>
+        </div>
+
+        <div class="arrows">
+            <div class="left"><img src="assets/icon-back-button.svg" alt="Back" onclick="plusSlides(-1)">
+            </div>
+            <div class="right"><img src="assets/icon-next-button.svg" alt="Next" onclick="plusSlides(1)">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+
+        </div>
+
+</body>
+
+</html>

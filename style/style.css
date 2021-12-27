@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+header img {
+    width: 168px;
+    height: 48px;
+}
+
+#startstop {
+    text-transform: uppercase;
+    color: #7D7D7D;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.57px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 29px 40px;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.column img {
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: opacity 1.5s;
+}
+
+.column img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.largeimage {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-top: 86%;
+    position: relative;
+}
+
+.slideshow {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    background-color: white;
+    padding: 24px;
+    position: absolute;
+    bottom: -20px;
+    left: -1px;
+}
+
+#authorphoto {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+}
+
+#year {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    font-size: 75px;
+    color: #F3F3F3;
+    font-weight: 700;
+}
+
+.nameimage {
+    color: #000000;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+.nameauthor {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.text {
+    padding-top: 180px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7D7D7D;
+    line-height: 28px;
+}
+
+.view {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: rgba(0%, 0%, 0%, 0.75);
+    padding: 16px;
+    color: white;
+    letter-spacing: 2.14px;
+    text-transform: uppercase;
+}
+
+.view img {
+    height: 12px;
+    width: 12px;
+    margin-right: 14px;
+}
+
+.source a {
+    color: #7D7D7D;
+    font-size: 9px;
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+}
+
+.source {
+    margin-top: 40px;
+    margin-bottom: 67px;
+}
+
+.footer {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.footer img {
+    width: 17px;
+    height: 16px;
+    margin: 20px;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+}
+
+.namefooter>.nameimage {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.namefooter>.nameauthor {
+    font-size: 10px;
+}
+
+#progress {
+    background-color: black;
+    width: 100%;
+}
+
+.left img,
+.right img {
+    cursor: pointer;
+}
+
+.textcol {
+    position: relative;
+}
+
+#img01 {
+    margin: auto;
+    width: 300px;
+    height: auto;
+}
+
+
+/*-----------------------------------Tablet----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 760px) {
+    .largeimage {
+        padding-top: 0;
+        margin-left: 40px;
+        width: 475px;
+        height: 560px;
+        background-size: cover;
+    }
+    .name {
+        width: 445px;
+        top: -1px;
+        left: 250px;
+        height: 300px;
+        padding: 10px;
+        overflow: visible;
+    }
+    #authorphoto {
+        top: 250px;
+        left: 500px;
+    }
+    #year {
+        position: absolute;
+        left: 200px;
+        top: 0;
+        font-size: 200px;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .nameimage {
+        font-size: 56px;
+        line-height: 64px;
+        padding: 10px;
+    }
+    .nameauthor {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .text {
+        padding-top: 140px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .footer {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-shrink: 0;
+        padding: 40px;
+    }
+    .footer a {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    .footer img {
+        width: 25px;
+        height: 24px;
+        margin: 20px;
+    }
+    .namefooter>.nameimage {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .namefooter>.nameauthor {
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    .source {
+        margin-left: 150px;
+    }
+    #img01 {
+        width: 500px;
+    }
+}
+
+
+/*-----------------------------------Desktop----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1400px) {
+    header img {
+        margin-left: 30px;
+    }
+    .slideshow {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .largeimage {
+        padding-top: 0;
+        margin-left: 40px;
+        width: 475px;
+        height: 560px;
+    }
+    .textcol {
+        flex-basis: 50%;
+        position: relative;
+    }
+    .name {
+        width: 445px;
+        top: -2px;
+        left: 350px;
+    }
+    #authorphoto {
+        top: 250px;
+        left: 500px;
+    }
+    #year {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 200px;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .nameimage {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .nameauthor {
+        font-size: 15px;
+    }
+    .text {
+        padding-top: 115px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .footer {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-shrink: 0;
+        padding: 40px;
+    }
+    .footer a {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    .footer img {
+        width: 25px;
+        height: 24px;
+        margin: 20px;
+    }
+    .namefooter>.nameimage {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .namefooter>.nameauthor {
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    .source {
+        margin-left: 150px;
+    }
+    #img01 {
+        margin: auto;
+        width: 700px;
+        height: auto;
+    }
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 700px;
+    height: 700px;
+}
+
+.view {
+    cursor: pointer;
+}
