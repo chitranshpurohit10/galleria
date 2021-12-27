@@ -1,0 +1,29 @@
+{
+  "name": "galleria-master",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Galleria slideshow site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon js/app3.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chitranshpurohit10/galleria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chitranshpurohit10/galleria/issues"
+  },
+  "homepage": "https://github.com/chitranshpurohit10/galleria#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "express-handlebars": "^6.0.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

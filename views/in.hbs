@@ -1,0 +1,28 @@
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+    <h3>Upload a picture</h3>
+    <input type="file" name="sampleFile" accept="image/*"/>
+    <input type="submit" class="btn btn-primary">
+</form>
+
+<div class="card">
+    {{#each rows}}
+
+        {{#if this.image}}
+            <img src="{{this.timage}}" alt="image" class="card__image">
+        {{else}}
+             <img src="{{this.timage}}" alt="default" class="card__image">
+        {{/if}}     
+
+
+        {{!-- <img src="/img/default.jpg" alt="default" class="card__image"> --}}
+        <h1 class="card__title">{{this.title}}</h1>
+        <p class="card__about">
+            {{this.description}}
+            {{!-- This is the description of some sort --}}
+        </p>
+        <button type="button" class="btn btn-primary" onclick="viewImage()">View Image</button>
+    {{/each}}
+
+</div>
+

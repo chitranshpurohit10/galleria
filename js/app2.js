@@ -37,7 +37,7 @@ function showSlides(imageNumber) {
 
 
     document.querySelectorAll(".nameimage")[0].innerHTML = images2[imageNumber].name;
-    document.querySelector(".source").innerHTML = `<a href="${images2[imageNumber].source}" targer="blank">GO TO SOURCE</a>`;
+    document.querySelector(".source").innerHTML = `<a href="${images2[imageNumber].source}" target="blank">GO TO SOURCE</a>`;
     document.getElementById("year").innerHTML = images2[imageNumber].year;
     let y = (parseInt(imageNumber) + 1) / parseInt(images2.length) * 100;
     document.getElementById("progress").style.width = `${y}%`;
